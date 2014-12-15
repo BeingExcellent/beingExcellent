@@ -1,0 +1,8 @@
+#1 -  create a repository in the Git hub
+#2 - in the command prompt
+	#1 - git init
+	#2 - touch a.txt (e.g.)
+	#3 - git add a.txt
+	#4 - git commit or git commit -m "first commit"
+	#5 - git remote add origin https://bikramjit-full-stack-developer@github.com/BeingExcellent/beingExcellent.git
+	#6 - git push -u origin master
