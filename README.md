@@ -1,2 +1,2 @@
-beingExcellent
-==============
+beingExcellent project
+======================
