@@ -117,7 +117,7 @@
 		<profile>
 			<id>conf</id>
 	        <build>
-	        	<finalName>sp_sc_hibernate</finalName>
+	        	<finalName>beingExcellent</finalName>
 	        	<plugins>
 	        		<plugin>
 		                <groupId>org.apache.tomcat.maven</groupId>
