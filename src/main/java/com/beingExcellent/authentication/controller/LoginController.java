@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.beingExcellent.model.entity.Users;
+import com.beingExcellent.model.entity.User;
 
 @Controller
 public class LoginController {
@@ -20,7 +20,7 @@ public class LoginController {
 	}
 
 	@RequestMapping("/login")
-	public ModelAndView getLoginForm(@ModelAttribute Users users,
+	public ModelAndView getLoginForm(@ModelAttribute User user,
 			@RequestParam(value = "error", required = false) String error,
 			@RequestParam(value = "logout", required = false) String logout) {
 

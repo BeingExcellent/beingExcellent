@@ -1,4 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.beingexcellent</groupId>
@@ -18,6 +19,7 @@
 		<context.path>beingExcellent</context.path>
 		<tomcat-servlet-api.version>7.0.29</tomcat-servlet-api.version>
 		<tomcat-jdbc.version>7.0.32</tomcat-jdbc.version>
+		<lombok.version>1.12.6</lombok.version>
 	</properties>
 	<build>
 		<finalName>${pom.artifactId}</finalName>
@@ -111,6 +113,13 @@
 			<groupId>org.apache.tomcat</groupId>
 			<artifactId>tomcat-jdbc</artifactId>
 			<version>${tomcat-jdbc.version}</version>
+		</dependency>
+		
+		<!-- Lombok -->
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>${lombok.version}</version>
 		</dependency>
 	</dependencies>
 	<profiles>

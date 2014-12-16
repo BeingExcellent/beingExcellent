@@ -11,34 +11,34 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "user_roles", catalog = "spring_social_db")
+@Table(name = "t_user_role", catalog = "beingexcellent")
 public class UserRole {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "user_role_id", unique = true, nullable = false)
-	private Integer userRoleId;
+	@Column(name = "id", unique = true, nullable = false)
+	private Long id;
 
 	@ManyToOne(fetch = FetchType.LAZY)
-	@JoinColumn(name = "username", nullable = false)
-	private Users user;
+	@JoinColumn(name = "user_id", nullable = false)
+	private User user;
 
 	@Column(name = "role", nullable = false, length = 45)
 	private String role;
 
-	public Integer getUserRoleId() {
-		return userRoleId;
+	public Long getId() {
+		return id;
 	}
 
-	public void setUserRoleId(Integer userRoleId) {
-		this.userRoleId = userRoleId;
+	public void setId(Long id) {
+		this.id = id;
 	}
 
-	public Users getUser() {
+	public User getUser() {
 		return user;
 	}
 
-	public void setUser(Users user) {
+	public void setUser(User user) {
 		this.user = user;
 	}
 
@@ -49,5 +49,4 @@ public class UserRole {
 	public void setRole(String role) {
 		this.role = role;
 	}
-
 }
