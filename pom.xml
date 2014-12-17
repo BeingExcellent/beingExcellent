@@ -19,7 +19,7 @@
 		<context.path>beingExcellent</context.path>
 		<tomcat-servlet-api.version>7.0.29</tomcat-servlet-api.version>
 		<tomcat-jdbc.version>7.0.32</tomcat-jdbc.version>
-		<lombok.version>1.12.6</lombok.version>
+		<lombok.version>1.14.8</lombok.version>
 	</properties>
 	<build>
 		<finalName>${pom.artifactId}</finalName>
